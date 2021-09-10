@@ -129,6 +129,42 @@
 }
 
 /* -------------------------------------------------------------- */
+/* FEATURED IN */
+/* -------------------------------------------------------------- */
+
+.section-featured {
+  padding: 3.6rem 0 2.8rem 0;
+}
+
+.heading-featured {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #868e96;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  /* align-content: center; */
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+  transition: all 400ms;
+}
+
+.logos img:hover {
+  filter: none;
+  opacity: 100%;
+}
+
+/* -------------------------------------------------------------- */
 /* HOW IT WORKS */
 /* -------------------------------------------------------------- */
 
@@ -195,4 +231,210 @@
 
 .step-imag {
   width: 45%;
+}
+
+/* -------------------------------------------------------------- */
+/* MEALS AND DIETS */
+/* -------------------------------------------------------------- */
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal-cards {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.2rem;
+  overflow: hidden;
+
+  transition: all 400ms;
+}
+
+.meal-cards:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.08);
+}
+
+.meal-container {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.meal-tag {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #003049;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-radius: 200px;
+}
+
+.meal-tag--vegetarian {
+  background-color: #51cf66;
+}
+
+.meal-tag--vegan {
+  background-color: #94d82d;
+}
+.meal-tag--paleo {
+  background-color: #ffd43b;
+}
+
+.meal-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #003049;
+  font-weight: bold;
+  margin-bottom: 3.2rem;
+}
+
+.meal-desc {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.meal-attr {
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-imag {
+  width: 100%;
+  /* border-top-left-radius: 1.2rem; */
+  /* border-top-right-radius: 1.2rem; */
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #f77f00;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* -------------------------------------------------------------- */
+/* TESTIMONIALS */
+/* -------------------------------------------------------------- */
+
+.section-testimonials {
+  background-color: #fde5cc;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5.4rem;
+  column-gap: 8.6rem;
+}
+
+.testimonial-imag {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial-quote {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+  color: #003049;
+}
+
+.testimonial-author {
+  font-size: 1.4rem;
+  color: #1a455b;
+  font-style: italic;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+
+  padding: 1.6rem;
+}
+
+.gallery-imag {
+  overflow: hidden;
+}
+
+.gallery-imag img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: all 400ms;
+}
+
+.gallery-imag img:hover {
+  transform: scale(1.1);
+}
+
+/* -------------------------------------------------------------- */
+/* PRICING AND FEATURES */
+/* -------------------------------------------------------------- */
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 5.2rem;
+}
+
+.plan-name {
+  color: #c66600;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  margin-bottom: 3.6rem;
+}
+.plan-price {
+  font-size: 6.8rem;
+  font-weight: bold;
+  color: #003049;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-family: "Playfair Display", serif;
+  font-size: 3.6rem;
+  margin-right: 1rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #1a455b;
+}
+
+.plan-text span {
+  color: #c66600;
+  font-weight: bold;
+}
+
+.plan-signup {
+  text-align: center;
+  margin-top: 5.2rem;
 }
