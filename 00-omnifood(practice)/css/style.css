@@ -1,171 +1,3 @@
-/* 
-
-NOTE: 1rem = 16px
-
-Typography
-    serif: 'Playfair Display'
-    sans-serif: 'Urbanist'
-
-Color
-    Primary: #F77F00
-    Font-color: #003049
-    Tints
-        #1a455b
-        #fde5cc
-    Shades 
-        #de7200
-        #c66600
-    Accents:
-    Greys: #555
-
-image source 
-    unsplash.com
-    UI faces
-
-Shadows
-    0 0.8rem 1rem rgba(0, 0, 0, 0.1);
-
-Border-radius
-    1rem
-
-Spacing
-    2 /4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-Font size
-    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-Font weight
-    Default: 400
-
-Line height
-    Default: 1
-    1.5
-
-*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* font-size: 10px; */
-  /* sets default rem size to 10px fixed value */
-
-  font-size: 62.5%;
-  /* 10px / 16px (1rem) = 0.625 = 62.5% */
-  /* respect user's browser font-size settings 
-  (useful when user tries to increase/decrease font-size) */
-}
-
-body {
-  font-family: "Urbanist", sans-serif;
-  line-height: 1;
-  font-weight: 400px;
-  color: #1a455b;
-}
-/* -------------------------------------------------------------- */
-/* GENERAL - Reusable*/
-/* -------------------------------------------------------------- */
-
-.heading-primary,
-.heading-secondary {
-  font-family: "Playfair Display", serif;
-  font-size: 6.2rem;
-  color: #003049;
-}
-.heading-primary {
-  font-weight: bold;
-  margin-bottom: 3.2rem;
-}
-
-.sub-heading {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #c66600;
-  text-transform: uppercase;
-  letter-spacing: 0.12rem;
-  margin-bottom: 1.4rem;
-}
-
-.heading-secondary {
-  font-size: 5.2rem;
-  margin-bottom: 9.6rem;
-}
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-
-  /* border: none; */
-  font-size: 2rem;
-  padding: 1.6rem 3.2rem;
-  border-radius: 1rem;
-  text-decoration: none;
-
-  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.1);
-
-  /* transition on original class */
-  transition: all 400ms;
-}
-
-.btn--main:link,
-.btn--main:visited {
-  background-color: #f77f00;
-  color: #fef2e6;
-  font-weight: bold;
-}
-
-.btn--main:hover,
-.btn--main:active {
-  background-color: #de7200;
-  color: #fff;
-  font-weight: bold;
-}
-
-.margin-right--sm {
-  margin-right: 1.6rem;
-}
-
-.btn--aside:link,
-.btn--aside:visited {
-  background-color: #fef2e6;
-  color: #1a455b;
-  font-weight: bold;
-}
-
-.btn--aside:hover,
-.btn--aside:active {
-  background-color: #fde5cc;
-  color: #003049;
-  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.container {
-  max-width: 120rem;
-  padding: 0 3.6rem;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-
-.grid--2-col {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3-col {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4-col {
-  grid-template-columns: repeat(4, 1fr);
-}
-
 /* -------------------------------------------------------------- */
 /* HEADER */
 /* -------------------------------------------------------------- */
@@ -286,8 +118,9 @@ body {
 }
 
 .delivered-text {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
+  letter-spacing: 0.12rem;
 }
 
 .delivered-text span {
@@ -303,6 +136,63 @@ body {
   padding: 9.6rem 0;
 }
 
+/* .step-detailbox {
+  /* margin: auto 0; 
+  align-self: center;
+} */
+
+.step-number {
+  font-family: "Urbanist", san-serif;
+  font-size: 9.8rem;
+  font-weight: 700;
+  color: #d3d9db;
+  margin-bottom: 1.2rem;
+}
+
+.step-desc {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
 .step-imagbox {
-  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.step-imagbox::before,
+.step-imagbox::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.step-imagbox::before {
+  width: 75%;
+  /* height: 75%; */
+
+  /* 75% of parent width */
+  padding-bottom: 75%;
+  border-radius: 50%;
+  background-color: #fef2e6;
+  z-index: -2;
+}
+
+.step-imagbox::after {
+  width: 55%;
+  padding-bottom: 55%;
+  border-radius: 50%;
+  background-color: #fdd9b3;
+  z-index: -1;
+}
+
+.step-imag {
+  width: 45%;
 }
