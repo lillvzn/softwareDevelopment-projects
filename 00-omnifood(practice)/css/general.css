@@ -71,6 +71,12 @@ body {
 strong {
   font-weight: 600;
 }
+
+*:focus {
+  outline: none;
+  /* transform: scale(1.08); */
+  box-shadow: 0 0 0 0.6rem #fbbf80 !important;
+}
 /* -------------------------------------------------------------- */
 /* GENERAL - Reusable*/
 /* -------------------------------------------------------------- */
@@ -107,15 +113,21 @@ strong {
   margin-bottom: 9.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
+
+  font-family: inherit;
 
   /* border: none; */
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 1rem;
   text-decoration: none;
+
+  border: none;
+  cursor: pointer;
 
   box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.1);
 
@@ -135,6 +147,18 @@ strong {
   background-color: #de7200;
   color: #fff;
   font-weight: bold;
+}
+
+.btn-signup {
+  background-color: #311900;
+  color: #fef2e6;
+  align-self: end;
+  padding: 1.2rem 3.2rem;
+}
+
+.btn-signup:hover {
+  background-color: #fef2e6;
+  color: #311900;
 }
 
 .margin-right--sm {
@@ -171,6 +195,10 @@ strong {
   row-gap: 9.6rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -181,6 +209,14 @@ strong {
 
 .grid--4-col {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-col {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--6-col {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .grid-align {
@@ -229,4 +265,8 @@ strong {
   width: 3rem;
   height: 3rem;
   color: #f77f00;
+}
+
+.logo {
+  height: 2.2rem;
 }

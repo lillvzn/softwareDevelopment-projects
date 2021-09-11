@@ -13,10 +13,6 @@
   padding: 0 4.8rem;
 }
 
-.logo {
-  height: 2.2rem;
-}
-
 /* -------------------------------------------------------------- */
 /* NAVIGATION */
 /* -------------------------------------------------------------- */
@@ -83,7 +79,7 @@
 
 .hero-desc {
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 4.8rem;
 }
 
@@ -386,6 +382,7 @@
 }
 
 .gallery-imag img:hover {
+  border-radius: 0.5rem;
   transform: scale(1.1);
 }
 
@@ -395,6 +392,42 @@
 
 .section-pricing {
   padding: 9.6rem 0;
+}
+
+.plans-grid {
+  border-radius: 1rem;
+  width: 75%;
+}
+
+.price-grid--starter {
+  justify-self: end;
+  background-color: #fffcfa;
+  border: 2px solid #fde5cc;
+  padding: 4rem;
+}
+
+.price-grid--complete {
+  background-color: #fde5cc;
+  padding: 4.2rem;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.price-grid--complete::after {
+  content: "Best value";
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  background-color: #f5c400;
+  padding: 1rem 10rem;
+
+  position: absolute;
+  top: 6%;
+  right: -22%;
+
+  transform: rotate(45deg);
 }
 
 .plan-header {
@@ -437,4 +470,198 @@
 .plan-signup {
   text-align: center;
   margin-top: 5.2rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #f77f00;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fef2e6;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.feature-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #003049;
+  margin-bottom: 1.6rem;
+}
+
+/* -------------------------------------------------------------- */
+/* CALL TO ACTION */
+/* -------------------------------------------------------------- */
+
+.section-call {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.container-call {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  /* background-color: #944c00; */
+  box-shadow: 0 2.8rem 4.2rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+
+  /* background-image: linear-gradient(90deg, #ad5900, #f77f00); */
+  background-image: linear-gradient(to right bottom, #f88c1a, #de7200);
+
+  overflow: hidden;
+}
+
+.cta-box .heading-secondary {
+  color: #311900;
+  margin-bottom: 3.2rem;
+  font-size: 4.8rem;
+}
+
+.cta-box {
+  color: #311900;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
+}
+
+.cta-imag {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(248, 141, 27, 0.4),
+      rgba(222, 115, 0, 0.4)
+    ),
+    url("/00-omnifood(practice)/content/images/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  /* font-family: "Urbanist", sans-serif; */
+  font-family: inherit;
+  font-size: 1.8rem;
+
+  color: inherit;
+
+  border: none;
+  background-color: #fef2e6;
+  border-radius: 1rem;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #7f7973;
+}
+
+.btn-signup {
+  font-weight: bold;
+}
+
+/* -------------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------------- */
+
+.section-footer {
+  padding: 12.8rem 0;
+  background-color: #fde5cc; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, #fde5cc, #fff);
+}
+
+.socials-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  color: #33596d;
+  line-height: 1.5;
+
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3.6rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.contacts p {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #33596d;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #003049;
+  transition: all 400ms;
 }
