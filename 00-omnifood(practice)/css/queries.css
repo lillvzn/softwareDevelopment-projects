@@ -1,0 +1,153 @@
+/* rem and em donot depend on HTML font-size for media queries */
+/* 1em = 1rem = 16px */
+/* Use em in media queries */
+
+/* -------------------------------------------------------------- */
+/* Below 1360px  (Smaller desktop sizes) */
+/* -------------------------------------------------------------- */
+/* 1360 / 16 = 85 */
+
+@media (max-width: 85em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 4.8rem;
+  }
+
+  .step-heading {
+    font-size: 3rem;
+  }
+
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 58.75%;
+  }
+
+  .grid {
+    column-gap: 5.6rem;
+    row-gap: 7.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* -------------------------------------------------------------- */
+/* Below 1200x  (landscape tablet sizes) */
+/* -------------------------------------------------------------- */
+/* 1200 / 16 = 75 */
+
+@media (max-width: 75em) {
+  html {
+    /* 9.4px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .cta-box .heading-secondary,
+  .heading-secondary {
+    font-size: 3.8rem;
+  }
+
+  .step-heading {
+    font-size: 2.4rem;
+  }
+
+  .section-header {
+    padding: 0 3.6rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.6rem;
+  }
+}
+
+/* -------------------------------------------------------------- */
+/* Below 1000x  (tablet sizes) */
+/* -------------------------------------------------------------- */
+/* 1004 / 60 = 62.75 */
+
+@media (max-width: 62.75em) {
+  html {
+    /* 8.4px / 16px = 52.5% */
+    font-size: 52.5%;
+  }
+
+  .meal-container {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* -------------------------------------------------------------- */
+/* Below 880x  (tablet sizes) */
+/* -------------------------------------------------------------- */
+/* 880 / 16 = 55 */
+
+@media (max-width: 55em) {
+  html {
+    font-size: 47.5%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+
+    gap: 6.4rem;
+  }
+
+  .hero-text,
+  .hero-imag {
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 50% !important;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.6rem;
+  }
+
+  .step-number {
+    font-size: 8.6rem;
+  }
+
+  .container-call {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-signup {
+    margin-top: 1.2rem;
+  }
+}
