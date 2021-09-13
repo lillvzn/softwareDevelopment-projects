@@ -594,7 +594,7 @@
       rgba(248, 141, 27, 0.4),
       rgba(222, 115, 0, 0.4)
     ),
-    url("content/images/eating.jpg");
+    url("/content/images/eating.jpg");
   background-size: cover;
   background-position: center;
 }
