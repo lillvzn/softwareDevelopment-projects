@@ -11,6 +11,8 @@
   /* To make the header sticky */
   height: 9.6rem;
   padding: 0 4.8rem;
+
+  position: relative;
 }
 
 /* -------------------------------------------------------------- */
@@ -55,6 +57,52 @@
 .main-nav--link.main-nav--call:active {
   background-color: #de7200;
   color: #fff;
+}
+
+/* Mobile navigation */
+
+.btn--mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.mobile-nav--icon {
+  height: 3.6rem;
+  width: 3.6rem;
+  color: #003049;
+}
+
+.mobile-nav--icon[name="close-outline"] {
+  display: none;
+}
+
+/* Sticky nav */
+
+.sticky .section-header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(230, 234, 237, 0.98);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(230, 234, 237, 0.98),
+    rgba(255, 255, 255, 0.97)
+  );
+
+  z-index: 999;
+
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.04);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
 }
 
 /* -------------------------------------------------------------- */
@@ -207,7 +255,7 @@
 }
 
 .step-imagbox::before {
-  width: 75%;
+  width: 70%;
   /* height: 75%; */
 
   /* 75% of parent width */
@@ -218,7 +266,7 @@
 }
 
 .step-imagbox::after {
-  width: 55%;
+  width: 50%;
   padding-bottom: 55%;
   border-radius: 50%;
   background-color: #fdd9b3;
@@ -226,7 +274,7 @@
 }
 
 .step-imag {
-  width: 45%;
+  width: 40%;
 }
 
 /* -------------------------------------------------------------- */
