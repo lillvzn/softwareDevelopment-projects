@@ -1,5 +1,6 @@
 .hero {
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 9.6rem 0;
+  height: 100vh;
 }
 
 .hero-container {
@@ -29,11 +30,14 @@
   justify-self: center;
 }
 
+.p-heading {
+  margin-bottom: 4.8rem;
+}
+
 .btn--hero-cta {
   border: none;
   background: none;
   cursor: pointer;
-  margin-top: 3.6rem;
   list-style: none;
 }
 
@@ -41,12 +45,17 @@
 .hero-cta:visited {
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 0.14rem;
   background-color: #e72b27;
-  padding: 1rem 4.2rem;
+  padding: 1rem 3.6rem;
   border-radius: 200rem;
   text-transform: uppercase;
+}
+
+.about {
+  height: 50vh;
+  margin: 0 auto;
 }
 
 .about-heading {
@@ -61,4 +70,37 @@
 .about-text {
   font-size: 1.6rem;
   justify-self: center;
+}
+
+.gap:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.curious {
+  max-height: 100vh;
+}
+
+.curious-heading {
+  font-size: 8rem;
+  font-weight: 400;
+  text-align: center;
+  color: #e72b27;
+  margin-bottom: 9.6rem;
+}
+
+.list-imag {
+  margin-bottom: 2.4rem;
+}
+
+.move--margin-left {
+  margin-left: 7.2rem;
+}
+
+.move--margin-down {
+  margin-top: 7.2rem;
+}
+
+.about-p {
+  padding: 1.2rem 12.8rem 0 0;
+  font-size: 1.4rem;
 }

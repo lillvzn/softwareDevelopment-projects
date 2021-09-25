@@ -16,12 +16,14 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  font-size: 1.4rem;
+h3 {
+  color: #e72b27;
+  font-size: 2.2rem;
+  text-transform: uppercase;
 }
 
-p:not(:last-child) {
-  margin-bottom: 2.4rem;
+a {
+  font-size: 1.4rem;
 }
 
 .p-heading {
