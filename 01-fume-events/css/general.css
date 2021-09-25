@@ -3,3 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #384f56;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  font-size: 1.4rem;
+}
+
+p:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.p-heading {
+  font-weight: 800;
+  font-size: 8.4rem;
+  line-height: 1;
+  letter-spacing: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 5.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-align {
+  align-items: center;
+}
+
+.grid-gap {
+  column-gap: 7.2rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
