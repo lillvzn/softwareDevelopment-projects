@@ -3,6 +3,6 @@
 ![Junction](https://cssbattle.dev/targets/84.png)
 
 ```
-<p rt l><p rt r><p rt t><p rt b>
-<style>*{margin:0;background:#191919}[rt]{position:absolute;height:180;width:40;background:#FE5F55}[l],[r]{background:#A64942;top:60;transform:rotate(90deg);left:70;border-radius:50vh 50vh 0 0}[r]{transform:rotate(-90deg);left:290}[t],[b]{left:180;height:130;transform:rotate(-180deg);border-radius:50vh 50vh 0 0}[b]{top:170;transform:rotate(0)}
+<p><p b>
+<style>*{background:#191919}p{position:absolute;height:220;width:40;background:#FE5F55;border-radius:50vh;box-shadow:0 260px 0 0 #FE5F55;top:-106;left:180}[b]{transform:rotate(90deg);background:#A64942;top:24;left:310;box-shadow:0 260px 0 0 #A64942}
 ```
