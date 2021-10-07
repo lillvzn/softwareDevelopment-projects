@@ -3,7 +3,5 @@
 ![Fidget Spinner](https://cssbattle.dev/targets/17.png)
 
 ```
-<p r><p c cl><p c cr><p c ct><p c cb><p>
-  <style>*{background:#09042A}p{position:absolute}[r]{height:80px;width:200px;background:#E78481;border-radius:50vh;top:95;left:100}
-    [c]{height:60px;width:60px;background:#F5BB9C;border-radius:50%;}[ct],[cb]{top:51;left:170;box-shadow:0 0 0 10px #09042A}[cb]{top:157}[cl],[cr]{top:104;left:110;background:#09042A}[cr]{left:230}
+<style>*{background:radial-gradient(#e78481 41q,0,#09042a)}*>*{margin:120 230 120 110;border-radius:50%;color:09042A;box-shadow:inset 0 1in,60px 53px #F5BB9C,60px 53px 0 11q,60px -53px #F5BB9C,60px -53px 0 11q,0 0 0 11q #E78481,120px 0,120px 0 0 11q #E78481
 ```

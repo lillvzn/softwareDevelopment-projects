@@ -3,56 +3,5 @@
 ![Matrix](https://cssbattle.dev/targets/18.png)
 
 ```
-<div class="grid">
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-  <div class="shape"></div>
-</div>
-<style>
-  body {
-    background: #5C434C;
-    margin: 0;
-  }
-  .grid {
-    margin-top: 10px;
-    margin-left: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-    row-gap: 20px;
-    align-content: center;
-    justifycontent: center;
-  }
-  .shape {
-    width: 80px;
-    height: 80px;
-    border-top-left-radius: 150%;
-  }
-  .shape:nth-child(1),
-  .shape:nth-child(3),
-  .shape:nth-child(6),
-  .shape:nth-child(8),
-  .shape:nth-child(9),
-  .shape:nth-child(11){
-    background:#F09462;
-  }
-  .shape:nth-child(2),
-  .shape:nth-child(4),
-  .shape:nth-child(5),
-  .shape:nth-child(7),
-  .shape:nth-child(10),
-  .shape:nth-child(12){
-    background:#F5D6B4
-  }
-
-</style>
+<p a><p b><p c><style>*{background:#5C434C}p{width:80;height:80;border-radius:50vh 0 0;margin:10 0 0 2}[a],[c]{background:#F09462;box-shadow:100px 0 0 #F5D6B4,200px 0 0 #F09462,300px 0 0 #F5D6B4}[c],[b]{margin-top:20}[b]{background:#F5D6B4;box-shadow:100px 0 0 #F09462,200px 0 0 #F5D6B4,300px 0 0 #F09462
 ```
