@@ -13,4 +13,4 @@ function findOdd(A) {
   });
   return getKeyByValue(counts, oddIndex);
 }
-//https://www.codewars.com/kata/54da5a58ea159efa38000836
+// https://www.codewars.com/kata/54da5a58ea159efa38000836
