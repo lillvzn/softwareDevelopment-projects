@@ -13,3 +13,6 @@ const sortThisArray = function (arr, order = "asc") {
 };
 
 sortThisArray([5, 3, 17, 24, 1, 7, 14, -2, 0], "dsc");
+
+// or use: arr.sort((a,b) => a-b);
+// arr.sort((a,b) => b-a);
